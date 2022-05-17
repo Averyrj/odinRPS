@@ -36,7 +36,10 @@ const result = playRound(playerSelection, computerSelection)
 console.log(result)
 console.log(playerScore)
 function game() {
-    for (let i = 0; i < 5; i++) {
-        // your code here!
+    if (playerScore === 5) {
+        return "Player wins, end of game"
+    }
+    else if (computerScore === 5) {
+        return "Computer wins, end of game"
     }
 }

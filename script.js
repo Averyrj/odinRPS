@@ -3,6 +3,9 @@ const p = 'Paper'
 const s = 'Scissors'
 let playerScore = 0;
 let computerScore = 0;
+const rockbtn = document.getElementById('rock');
+const paperbtn = document.getElementById('paper');
+const scissorsbtn = document.getElementById('scissors');
 
 function computerPlay() {
     let randomNumber = Math.floor(Math.random() * 3)
@@ -43,3 +46,6 @@ function game() {
         return "Computer wins, end of game"
     }
 }
+rockbtn.addEventListener('click', () => {
+    alert("Hello World");
+});

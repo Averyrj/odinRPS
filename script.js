@@ -32,8 +32,8 @@ function playRound(playerSelection, computerSelection) {
         return "Tie"
     };
 }
-const result = playRound(playerSelection, computerSelection)
-console.log(result)
+const roundResult = playRound(playerSelection, computerSelection)
+console.log(roundResult)
 console.log(playerScore)
 function game() {
     if (playerScore === 5) {
